@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    color: #0de50d;
+    background-color: rgb(252, 251, 253)container }
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+
+h1, h2 {
+    color: #2c3e50;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+p, ul {
+    margin: 0 0 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header p {
+    font-size: 1.2rem;
+    color: #020202;
+}
+/* Experiencia laboral y educación */
+section {
+    margin-bottom: 20px;
+}
+section ul li {
+    margin-bottom: 10px;
+}
+li strong {
+    font-weight: bold;
+    display: block;
+}
+li span {
+    color: #7f8c8d;
+    font-style: italic;
+}
+/* Habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills li {
+    width: 45%;
+    margin-bottom: 10px;
+}
+.skills li::before {
+    content: '• ';
+    color: #3498db;
+    margin-right: 5px;
+}
+Estructura HTML
+Para usar este archivo CSS, puedes crear un archivo HTML (index.html) con la siguiente estructura para organizar tu currículum:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nombre Completo</h1>
+            <p>Profesión o Cargo</p>
+            <p>Correo electrónico: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+            <p>Teléfono: +00 123 456 789</p>
+        </header>
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>
+                    <strong>Nombre de la empresa</strong> - Cargo desempeñado
+                    <span>(Fechas)</span>
+                    <p>Descripción del trabajo y logros.</p>
+                </li>
+                <!-- Añade más experiencia aquí -->
+            </ul>
+        </section>
+        <section>
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <strong>Institución</strong> - Título obtenido
+                    <span>(Fechas)</span>
+                </li>
+                <!-- Añade más educación aquí -->
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Habilidad 1</li>
+                <li>Habilidad 2</li>
+                <li>Habilidad 3</li>
+                <!-- Añade más habilidades aquí -->
+            </ul>
+        </section>
+    </div>
+</body
+
+
+</html>
+s
